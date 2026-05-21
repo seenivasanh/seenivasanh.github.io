@@ -8,102 +8,59 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --navy:#1a2b3c; --blue:#2563eb; --blue-light:#dbeafe; --slate:#475569; --muted:#94a3b8; --border:#e2e8f0; --bg:#ffffff; --bg-alt:#f8fafc; --radius:8px; --max-w:720px; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.75; color: var(--navy); background: var(--bg); }
-    a { color: var(--blue); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 2rem; }
-    .nav-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
-    .nav-logo { font-family: 'Crimson Pro', serif; font-size: 1.2rem; font-weight: 600; color: var(--navy); }
-    .nav-links { display: flex; gap: 1.8rem; list-style: none; }
-    .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--slate); transition: color 0.2s; }
-    .nav-links a:hover, .nav-links a.active { color: var(--blue); text-decoration: none; }
-
-    main { padding: 4rem 2rem 6rem; }
-    .main-inner { max-width: var(--max-w); margin: 0 auto; }
-    .back-link { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.875rem; font-weight: 500; color: var(--slate); margin-bottom: 2.5rem; }
-    .back-link:hover { color: var(--blue); text-decoration: none; }
-
-    .post-date-full { font-size: 0.82rem; font-weight: 500; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; display: block; margin-bottom: 0.75rem; }
-    h1 { font-family: 'Crimson Pro', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 600; color: var(--navy); line-height: 1.2; margin-bottom: 0.75rem; }
-    .post-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.8rem; }
-    .tag { font-size: 0.72rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 4px; background: var(--blue-light); color: var(--blue); }
-
-    hr.divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
-
-    .prose { color: var(--slate); }
-    .prose p { margin-bottom: 1.25rem; }
-    .prose h2 { font-family: 'Crimson Pro', serif; font-size: 1.5rem; font-weight: 600; color: var(--navy); margin: 2rem 0 0.75rem; }
-    .prose h3 { font-family: 'Crimson Pro', serif; font-size: 1.2rem; font-weight: 600; color: var(--navy); margin: 1.5rem 0 0.5rem; }
-    .prose ul, .prose ol { padding-left: 1.4rem; margin-bottom: 1.25rem; }
-    .prose li { margin-bottom: 0.3rem; }
-    .prose blockquote { border-left: 3px solid var(--blue); padding-left: 1.2rem; margin: 1.5rem 0; font-style: italic; color: var(--slate); }
-    .prose code { font-family: 'Courier New', monospace; font-size: 0.875em; background: var(--bg-alt); padding: 0.15em 0.35em; border-radius: 3px; color: var(--navy); }
-    .prose pre { background: var(--bg-alt); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.2rem; overflow-x: auto; margin-bottom: 1.25rem; }
-    .prose pre code { background: none; padding: 0; font-size: 0.875rem; }
-    .prose img { max-width: 100%; border-radius: var(--radius); margin: 1.5rem auto; display: block; }
-    .prose a { color: var(--blue); text-decoration: underline; }
-    .prose strong { color: var(--navy); font-weight: 600; }
-    .prose table { width: 100%; border-collapse: collapse; margin-bottom: 1.25rem; font-size: 0.9rem; }
-    .prose th { background: var(--bg-alt); border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; font-weight: 600; color: var(--navy); }
-    .prose td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; color: var(--slate); }
-
-    .post-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.875rem; }
-    .post-nav a { color: var(--slate); font-weight: 500; }
-    .post-nav a:hover { color: var(--blue); text-decoration: none; }
-    .post-nav .label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.2rem; }
-
-    footer { background: var(--navy); color: var(--muted); text-align: center; padding: 2rem; font-size: 0.82rem; }
-    footer a { color: #93c5fd; }
-  </style>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="/index.html" style="text-decoration:none;">Seenivasan Hariharan</a>
+    <a class="nav-logo" href="/index.html">Seenivasan Hariharan</a>
     <ul class="nav-links">
       <li><a href="/index.html#about">About</a></li>
       <li><a href="/index.html#research">Research</a></li>
       <li><a href="/publications.html">Publications</a></li>
+      <li><a href="/talks.html">Talks</a></li>
+      <li><a href="/teaching.html">Teaching</a></li>
       <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/index.html#contact">Contact</a></li>
+      <li><a href="/files/sh_resume_.pdf" target="_blank">CV</a></li>
     </ul>
   </div>
 </nav>
 
-<main>
-  <div class="main-inner">
+<main style="padding: 4rem 2rem 6rem;">
+  <div class="main-inner-prose">
+
     <a class="back-link" href="/blog/">← All posts</a>
 
-    <span class="post-date-full">{{ page.date | date: "%B %-d, %Y" }}</span>
+    <span style="font-size:0.82rem;font-weight:500;color:var(--muted);letter-spacing:0.04em;text-transform:uppercase;display:block;margin-bottom:0.75rem;">
+      {{ page.date | date: "%B %-d, %Y" }}
+    </span>
     <h1>{{ page.title }}</h1>
     {% if page.tags.size > 0 %}
-    <div class="post-tags">{% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
+    <div class="post-tags" style="margin-top:0.8rem;">
+      {% for tag in page.tags %}<span class="tag tag-blue">{{ tag }}</span>{% endfor %}
+    </div>
     {% endif %}
 
-    <hr class="divider" />
+    <hr class="rule" style="margin: 2rem 0;" />
 
     <div class="prose">{{ content }}</div>
 
     <div class="post-nav">
       <div>
         {% if page.previous.url %}
-        <span class="label">← Older</span>
+        <span class="nav-label">← Older</span>
         <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
         {% endif %}
       </div>
       <div style="text-align:right;">
         {% if page.next.url %}
-        <span class="label">Newer →</span>
+        <span class="nav-label">Newer →</span>
         <a href="{{ page.next.url }}">{{ page.next.title }}</a>
         {% endif %}
       </div>
     </div>
+
   </div>
 </main>
 

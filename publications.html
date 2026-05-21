@@ -4,63 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Publications — Seenivasan Hariharan</title>
+  <meta name="description" content="Publications by Seenivasan Hariharan in quantum computing and computational chemistry." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --navy:#1a2b3c; --blue:#2563eb; --blue-light:#dbeafe; --slate:#475569; --muted:#94a3b8; --border:#e2e8f0; --bg:#ffffff; --bg-alt:#f8fafc; --radius:8px; --max-w:860px; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: var(--navy); background: var(--bg); }
-    a { color: var(--blue); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 2rem; }
-    .nav-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
-    .nav-logo { font-family: 'Crimson Pro', serif; font-size: 1.2rem; font-weight: 600; color: var(--navy); }
-    .nav-links { display: flex; gap: 1.8rem; list-style: none; }
-    .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--slate); transition: color 0.2s; }
-    .nav-links a:hover, .nav-links a.active { color: var(--blue); text-decoration: none; }
-    .page-header { padding: 4rem 2rem 3rem; background: var(--bg-alt); border-bottom: 1px solid var(--border); }
-    .page-header-inner { max-width: var(--max-w); margin: 0 auto; }
-    .section-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue); margin-bottom: 0.6rem; }
-    h1 { font-family: 'Crimson Pro', serif; font-size: 2.4rem; font-weight: 600; color: var(--navy); line-height: 1.2; margin-bottom: 0.6rem; }
-    .page-header p { color: var(--slate); font-size: 1rem; max-width: 540px; }
-    .scholar-link { display: inline-flex; align-items: center; gap: 0.45rem; margin-top: 1.2rem; padding: 0.5rem 1.1rem; border-radius: 8px; font-size: 0.875rem; font-weight: 500; border: 1.5px solid var(--border); color: var(--navy); background: var(--bg); transition: border-color 0.2s, color 0.2s, background 0.2s; }
-    .scholar-link:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-light); text-decoration: none; }
-    main { padding: 3rem 2rem 5rem; }
-    .main-inner { max-width: var(--max-w); margin: 0 auto; }
-    .back-link { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.875rem; font-weight: 500; color: var(--slate); margin-bottom: 2rem; }
-    .back-link:hover { color: var(--blue); text-decoration: none; }
-    .year-group { margin-bottom: 3rem; }
-    .year-heading { font-family: 'Crimson Pro', serif; font-size: 1.5rem; font-weight: 600; color: var(--navy); padding-bottom: 0.5rem; border-bottom: 2px solid var(--blue); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.75rem; }
-    .year-count { font-size: 0.75rem; font-weight: 600; padding: 0.15rem 0.55rem; background: var(--blue-light); color: var(--blue); border-radius: 999px; font-family: 'Inter', sans-serif; }
-    .pub-list { list-style: none; }
-    .pub-item { padding: 1.4rem 0; border-bottom: 1px solid var(--border); display: grid; grid-template-columns: auto 1fr; gap: 0 1.2rem; }
-    .pub-item:last-child { border-bottom: none; }
-    .pub-number { color: var(--muted); font-size: 0.85rem; font-weight: 600; padding-top: 0.15rem; min-width: 1.8rem; }
-    .pub-title { font-family: 'Crimson Pro', serif; font-size: 1.1rem; font-weight: 600; color: var(--navy); margin-bottom: 0.25rem; line-height: 1.4; }
-    .pub-authors { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.3rem; }
-    .pub-authors strong { color: var(--slate); font-weight: 600; }
-    .pub-venue { font-size: 0.875rem; color: var(--slate); font-style: italic; margin-bottom: 0.5rem; }
-    .pub-links { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-    .pub-badge { font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 4px; background: var(--blue-light); color: var(--blue); }
-    .pub-badge:hover { text-decoration: none; opacity: 0.8; }
-    .pub-badge.preprint { background: #fef3c7; color: #92400e; }
-    footer { background: var(--navy); color: var(--muted); text-align: center; padding: 2rem; font-size: 0.82rem; }
-    footer a { color: #93c5fd; }
-  </style>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="/index.html" style="text-decoration:none;">Seenivasan Hariharan</a>
+    <a class="nav-logo" href="/index.html">Seenivasan Hariharan</a>
     <ul class="nav-links">
       <li><a href="/index.html#about">About</a></li>
       <li><a href="/index.html#research">Research</a></li>
       <li><a href="/publications.html" class="active">Publications</a></li>
+      <li><a href="/talks.html">Talks</a></li>
+      <li><a href="/teaching.html">Teaching</a></li>
       <li><a href="/blog/">Blog</a></li>
-      <li><a href="/index.html#contact">Contact</a></li>
+      <li><a href="/files/sh_resume_.pdf" target="_blank">CV</a></li>
     </ul>
   </div>
 </nav>
@@ -70,9 +32,9 @@
     <p class="section-label">Research Output</p>
     <h1>Publications</h1>
     <p>Journal articles, conference proceedings, and preprints in quantum computing and computational chemistry.</p>
-    <a class="scholar-link" href="https://scholar.google.com/citations?user=xCyCs4MAAAAJ&hl=en" target="_blank" rel="noopener">
+    <a class="hero-link" style="margin-top:1.2rem;display:inline-flex;" href="https://scholar.google.com/citations?user=xCyCs4MAAAAJ&hl=en" target="_blank" rel="noopener">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 10a8 8 0 017.162 3.44L24 9.5z"/></svg>
-      View full list on Google Scholar ↗
+      Full list on Google Scholar ↗
     </a>
   </div>
 </div>
@@ -83,21 +45,17 @@
 
     <!-- ══════════════════════════════════════════════
          HOW TO ADD A PUBLICATION
-         ──────────────────────────────────────────────
-         1. Copy any <li class="pub-item"> block below
-         2. Paste it inside the correct <ul class="pub-list">
-         3. Fill in: pub-title, pub-authors, pub-venue
-         4. Update pub-number and the year-count badge
-         5. Add/remove badge links (DOI, arXiv, PDF)
+         Copy a .pub-item-grid block, fill in the fields,
+         update the year-count badge, add/remove badges.
          ══════════════════════════════════════════════ -->
 
     <!-- 2026 -->
     <div class="year-group">
       <div class="year-heading">2026 <span class="year-count">1</span></div>
       <ul class="pub-list">
-        <li class="pub-item">
+        <li class="pub-item-grid">
           <span class="pub-number">1.</span>
-          <div class="pub-body">
+          <div>
             <p class="pub-title">Spin Matters: A Multidisciplinary Roadmap to Understanding Spin Effects in Oxygen Evolution Reaction During Water Electrolysis</p>
             <p class="pub-authors">van der Minne, E., ..., <strong>Hariharan, S.</strong>, et al.</p>
             <p class="pub-venue">Advanced Energy Materials (2026)</p>
@@ -114,9 +72,9 @@
     <div class="year-group">
       <div class="year-heading">2025 <span class="year-count">2</span></div>
       <ul class="pub-list">
-        <li class="pub-item">
+        <li class="pub-item-grid">
           <span class="pub-number">1.</span>
-          <div class="pub-body">
+          <div>
             <p class="pub-title">Line-Graph Qubit Routing: From Kagome to Heavy-Hex and More</p>
             <p class="pub-authors">Kattemölle, J.; <strong>Hariharan, S.</strong></p>
             <p class="pub-venue">ACM Transactions on Quantum Computing, 6(3) (2025)</p>
@@ -126,9 +84,9 @@
             </div>
           </div>
         </li>
-        <li class="pub-item">
+        <li class="pub-item-grid">
           <span class="pub-number">2.</span>
-          <div class="pub-body">
+          <div>
             <p class="pub-title">Quantum Walks for Chemical Reaction Networks</p>
             <p class="pub-authors"><strong>Hariharan, S.</strong>, Zur, S., Kinge, S., et al.</p>
             <p class="pub-venue">arXiv preprint (2025)</p>
@@ -144,9 +102,9 @@
     <div class="year-group">
       <div class="year-heading">2024 <span class="year-count">1</span></div>
       <ul class="pub-list">
-        <li class="pub-item">
+        <li class="pub-item-grid">
           <span class="pub-number">1.</span>
-          <div class="pub-body">
+          <div>
             <p class="pub-title">Modeling Heterogeneous Catalysis Using Quantum Computers: An Academic and Industry Perspective</p>
             <p class="pub-authors"><strong>Hariharan, S.</strong>, Kinge, S., Visscher, L.</p>
             <p class="pub-venue">Journal of Chemical Information and Modeling, 65(2), 472–511 (2024)</p>
@@ -158,8 +116,6 @@
         </li>
       </ul>
     </div>
-
-    <!-- Earlier — add more year groups above this as needed -->
 
   </div>
 </main>
